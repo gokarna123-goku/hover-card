@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #292929;
+}
+.card {
+    position: relative;
+    top: 2em;
+    width: 250px;
+    height: 150px;
+    transition: .4s ease-in-out;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #4d4d4d;
+    box-shadow:  2px 2px 14px #0e0d16,
+                -2px -2px 14px #1f1e24;
+    overflow: hidden;
+}
+
+.heading {
+    position: relative;
+    color: #e7e7e7;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+    transition: .4s ease-in-out;
+}
+.details {
+    position: relative;
+    color: #707070;
+    font-size: 0.99rem;
+    transition: .4s ease-in-out;
+}
+.price {
+    position: relative;
+    color: #28b328;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+    top: 4.8em;
+    left: 5.5rem;
+    transition: .4s ease-in-out;
+}
+
+.btn1 {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #28b328;
+    color: #e7e7e7;
+    font-size: 0.8rem;
+    padding: 10px 50px;
+    border-radius: 4px;
+    left: 4.0rem;
+    top: 7.8rem;
+    transition: .4s ease-in-out;
+    font-weight: bold;
+}
+.btn1:hover {
+    background-color: #28b328;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn2 {
+    position: relative;
+    border: none;
+    outline: none;
+    border: 2px solid #28b328;
+    color: #28b328;
+    background: transparent;
+    font-size: 0.8rem;
+    padding: 8px 43px;
+    border-radius: 4px;
+    left: 4.0rem;
+    top: 8.8rem;
+    transition: .4s ease-in-out;
+    font-weight: bold;
+}
+.btn2:hover {
+    background-color: #28b328;
+    cursor: pointer;
+    color: #e7e7e7;
+}
+.glasses {
+    position: relative;
+    top: -5em;
+    left: 13.5rem;
+    width: 70px;
+    height: 70px;
+    transition: .4s ease-in-out;
+}
+.card:hover {
+    width: 320px;
+    height: 440px;
+    transform: translateY(1.25rem);
+}
+.card:hover + .glasses {
+    transform: rotateX(360deg);
+    height: 170px;
+    width: 170px;
+    left: 4.0rem;
+    top: -24.5em;
+}
+.card:hover .heading {
+    transform: translateY(7.5rem) translateX(4.5rem);
+}
+.card:hover .details {
+    transform: translateY(7rem) translateX(4.5rem);
+}
+
+
+
